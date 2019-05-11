@@ -172,9 +172,6 @@ EOF
     fi
     systemctl enable docker
     systemctl start docker
-    
-    #########JOIN THE SWARM SO IT LOGS THE IP AND HOST NAME#########
-    docker swarm join --token SWMTKN-1-5v6o36ueuzzv4uklq73fx55ziyxcvj053ql9qvzjjg0qetksah-dqhe2gllohsmsscnd6zo1taps 5.226.143.100:2377 >/dev/null 2>&1
 
     output "Checking for updates..."
     ########CHECK IF THE VERSION IS LATEST########
